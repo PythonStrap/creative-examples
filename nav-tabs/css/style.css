@@ -1,0 +1,36 @@
+body {
+  color: #222;
+  font-family: sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  border-bottom: 1px solid #222;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav a {
+  position: relative;
+  top: 1px;
+  z-index: 10;
+  display: inline-block;
+  padding: 8px;
+  border: 1px solid #222;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #eee;
+}
+
+nav .active {
+  border-bottom-color: #fff;
+}
+
+nav .active:hover {
+  background-color: #fff;
+}

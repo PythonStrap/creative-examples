@@ -1,0 +1,44 @@
+/* styles the 'bar' */
+nav {
+  background-color: #ddd;
+  padding: 5px;
+}
+
+/* removes default styling from ul */
+nav ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+nav > ul > li {
+  display: inline-block; /* places each li horizontally */
+  margin-right: 10px;    /* space between each li */
+  position: relative; /* 'activates' li to keep ul within */
+}
+
+nav li ul {
+  display: none;      /* hide an inner ul by default */
+}
+
+nav ul li:hover ul {
+  display: block;     /* makes inner ul appear when parent li is hovered over */
+  position: absolute; /* inner ul is positioned inside its parent li */
+  padding-top: 5px;
+  left: -5px;
+  z-index: 10;
+}
+
+/* styling for inner li */
+nav li ul li {
+  background-color: #eee;
+  padding: 5px;
+}
+
+/* styling to make everything uniform on the nav bar */
+nav a,
+nav > ul > li {
+  color: rgb(175,10,30);
+  text-decoration: underline;
+  font-weight: bold;
+}
